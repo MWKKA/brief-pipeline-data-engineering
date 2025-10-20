@@ -43,3 +43,6 @@ Thumbs.db
 # DLT
 .dlt/secrets.toml
 .dlt/.sources
+
+*.duckdb
+*.duckdb.wal
