@@ -173,8 +173,8 @@ def _get_arg(flag: str, default: str | None = None) -> str | None:
 
 def main() -> None:
     # Valeurs par défaut imposées par la spec implicite
-    data_dir = _get_arg("--dir", "src/data/raw")
-    db_path = _get_arg("--db", "src/yellow_taxi.duckdb")
+    data_dir = _get_arg("--dir", "data/raw")
+    db_path = _get_arg("--db", "yellow_taxi.duckdb")
     stats_only = "--stats" in sys.argv
 
     importer = DuckDBImporter(db_path)
