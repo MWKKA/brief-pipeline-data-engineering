@@ -1,0 +1,35 @@
+# Environnements virtuels et variables
+.venv/
+.env
+.env.local
+
+# Caches & compilations Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+.Python
+
+# Git & IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node / front-end éventuel
+node_modules/
+package-lock.json
+
+#Données lourdes à exclure de l'image
+src/data/raw/
+*.parquet
+*.csv
+*.duckdb
+*.duckdb.wal
+
+# OS / système
+.DS_Store
+Thumbs.db

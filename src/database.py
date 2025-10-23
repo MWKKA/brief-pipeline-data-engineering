@@ -14,7 +14,7 @@ DB_NAME = os.getenv("POSTGRES_DB", "postgres")
 DATABASE_URL = f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 
 # 🔹 Création du moteur SQLAlchemy
-engine = create_engine(DATABASE_URL, echo=True)  # echo=True pour afficher les requêtes SQL
+engine = create_engine(DATABASE_URL, echo=False, pool_pre_ping=True)
 
 # 🔹 Création de la session
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

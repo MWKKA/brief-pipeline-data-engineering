@@ -12,7 +12,7 @@ ENV/
 # Data files
 *.parquet
 *.csv
-data/
+src/data/raw
 
 # Databases
 *.db
